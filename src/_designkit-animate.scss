@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*
+//
+// Designkit-Animate
+// --------------------------------------------------
+*/
+
+.animate-top,
+.animate-bottom {
+  opacity: 0;
+  @include animation-duration(.6s);
+  @include animation-fill-mode(forwards);
+}
+
+.animate-top {
+  @include animation-name(animate-top);
+  @include transform(translateY(-12.5vh));
+}
+
+.animate-bottom {
+  @include animation-name(animate-bottom);
+  @include transform(translateY(12.5vh));
+}
+
+@include keyframes(animate-top) {
+  0% {
+    @include transform(translateY(-12.5vh));
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(animate-bottom) {
+  0% {
+    @include transform(translateY(12.5vh));
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+.animate-fade {
+  opacity: 0;
+  @include animation-name(animate-fade);
+  @include animation-duration(.4s);
+  @include animation-fill-mode(forwards);
+}
+
+@include keyframes(animate-fade) {
+    0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.animate-delay-1 { @include animation-delay(.1s) }
+.animate-delay-2 { @include animation-delay(.2s) }
+.animate-delay-3 { @include animation-delay(.4s) }
+.animate-delay-4 { @include animation-delay(.6s) }
+.animate-delay-5 { @include animation-delay(1s) }
+.animate-delay-6 { @include animation-delay(2s) }
+
+.animate-duration-1 { @include animation-duration(.1s) }
+.animate-duration-2 { @include animation-duration(.2s) }
+.animate-duration-3 { @include animation-duration(.4s) }
+.animate-duration-4 { @include animation-duration(.6s) }
+.animate-duration-5 { @include animation-duration(1s) }
+.animate-duration-6 { @include animation-duration(2s) }
+
+.animate-linear { @include animation-timing-function(linear) }
+.animate-ease-in { @include animation-timing-function(ease-in) }
+.animate-ease-out { @include animation-timing-function(ease-out) }
+.animate-ease-in-out { @include animation-timing-function(ease-in-out) }
+.animate-motion { @include animation-timing-function(cubic-bezier(.62,.28,.23,.99)) }
