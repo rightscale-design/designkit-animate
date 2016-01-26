@@ -7,7 +7,9 @@
 */
 
 .animate-top,
-.animate-bottom {
+.animate-bottom,
+.animate-left,
+.animate-right {
   opacity: 0;
   @include animation-duration(.6s);
   @include animation-fill-mode(forwards);
@@ -20,6 +22,16 @@
 
 .animate-bottom {
   @include animation-name(animate-bottom);
+  @include transform(translateY(12.5vh));
+}
+
+.animate-left {
+  @include animation-name(animate-left);
+  @include transform(translateY(-12.5vh));
+}
+
+.animate-right {
+  @include animation-name(animate-right);
   @include transform(translateY(12.5vh));
 }
 
@@ -41,6 +53,28 @@
   }
   100% {
     @include transform(translateY(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(animate-left) {
+  0% {
+    @include transform(translateX(-12.5vh));
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateX(0));
+    opacity: 1;
+  }
+}
+
+@include keyframes(animate-right) {
+  0% {
+    @include transform(translateX(12.5vh));
+    opacity: 0;
+  }
+  100% {
+    @include transform(translateX(0));
     opacity: 1;
   }
 }
