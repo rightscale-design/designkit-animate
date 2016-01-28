@@ -91,6 +91,28 @@
   100% { opacity: 1 }
 }
 
+@include keyframes(animate-zoom) {
+  0% {
+    @include transform(scale(.9));
+    opacity: 0;
+  }
+  50% {
+    @include transform(scale(1.03));
+    opacity: 1;
+  }
+  100% {
+    @include transform(scale(1));
+    opacity: 1;
+  }
+}
+
+.animate-zoom {
+  opacity: 0;
+  @include animation-name(animate-zoom);
+  @include animation-duration(.2s);
+  @include animation-fill-mode(forwards);
+}
+
 .animate-delay-1 { @include animation-delay(.1s) }
 .animate-delay-2 { @include animation-delay(.2s) }
 .animate-delay-3 { @include animation-delay(.4s) }

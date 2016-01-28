@@ -1,4 +1,27 @@
-# Work in progress
+# Designkit Animate
+
+## Install
+
+```bash
+npm i designkit-animate
+```
+
+## Markup
+
+```html
+<!-- Fading From the Top -->
+<div class="animate-top">Top</div>
+<!-- Fading From the Right -->
+<div class="animate-right">Right</div>
+<!-- Fading From the Bottom -->
+<div class="animate-bottom">Bottom</div>
+<!-- Fading From the Left -->
+<div class="animate-left">left</div>
+<!-- Zoom In -->
+<div class="animate-zoom">Zoom</div>
+<!-- Fade In -->
+<div class="animate-fade">Fade</div>
+```
 
 ## Author
 

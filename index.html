@@ -4,9 +4,43 @@
   <meta charset="UTF-8">
   <title>Designkit-Animate</title>
   <link rel="stylesheet" href="designkit-animate.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <style>
+      * {
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      body {
+        font: normal normal 16px/1.6 "Helvetica Neue", helvetica, arial, sans-serif;
+        margin: 0;
+        background-color: #fafafa;
+        color: #444;
+        height: 100%;
+      }
+
+      .wrapper {
+        width: 928px;
+        padding: 0 40px;
+        margin: 0 auto;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .mega  { font-size: 4rem; }
+  </style>
 </head>
 <body>
-  <h1>Test</h1>
-  <div class="animate-fade">Fade</div>
+  <div class="wrapper">
+    <h1>Animate Doc</h1>
+    <div class="text-center mega">
+      <div class="animate-top animate-delay-1">Top</div>
+      <div class="animate-right animate-delay-2">Right</div>
+      <div class="animate-bottom animate-delay-3">Bottom</div>
+      <div class="animate-left animate-delay-4">left</div>
+      <div class="animate-zoom animate-delay-5">Zoom</div>
+      <div class="animate-fade animate-duration-6 animate-delay-5">Fade</div>
+    </div>
+  </div>
 </body>
 </html>
