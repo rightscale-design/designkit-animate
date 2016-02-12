@@ -21,6 +21,8 @@ npm i designkit-animate
 <div class="animate-zoom">Zoom</div>
 <!-- Fade In -->
 <div class="animate-fade">Fade</div>
+<!-- Highlight -->
+<div class="animate-highlight">Highlight</div>
 ```
 
 ## Author

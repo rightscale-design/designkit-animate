@@ -334,6 +334,51 @@
   animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes animate-highlight {
+  0% {
+    background-color: rgba(221, 255, 158, 0.5);
+    background-color: rgba(191, 255, 71, 0.5);
+  }
+  100% {
+    background-color: rgba(221, 255, 158, 0);
+    background-color: rgba(191, 255, 71, 0);
+  }
+}
+
+@-moz-keyframes animate-highlight {
+  0% {
+    background-color: rgba(221, 255, 158, 0.5);
+    background-color: rgba(191, 255, 71, 0.5);
+  }
+  100% {
+    background-color: rgba(221, 255, 158, 0);
+    background-color: rgba(191, 255, 71, 0);
+  }
+}
+
+@keyframes animate-highlight {
+  0% {
+    background-color: rgba(221, 255, 158, 0.5);
+    background-color: rgba(191, 255, 71, 0.5);
+  }
+  100% {
+    background-color: rgba(221, 255, 158, 0);
+    background-color: rgba(191, 255, 71, 0);
+  }
+}
+
+.animate-highlight {
+  -webkit-animation-name: animate-highlight;
+  -moz-animation-name: animate-highlight;
+  animation-name: animate-highlight;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
 .animate-delay-1 {
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;

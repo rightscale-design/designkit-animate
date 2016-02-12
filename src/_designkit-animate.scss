@@ -113,6 +113,23 @@
   @include animation-fill-mode(forwards);
 }
 
+@include keyframes(animate-highlight) {
+  0% {
+    background-color: rgba(#ddff9e, 0.5);
+    background-color: rgba(#bfff47, 0.5);
+  }
+  100% {
+    background-color: rgba(#ddff9e, 0);
+    background-color: rgba(#bfff47, 0);
+  }
+}
+
+.animate-highlight {
+  @include animation-name(animate-highlight);
+  @include animation-duration(2s);
+  @include animation-fill-mode(forwards);
+}
+
 .animate-delay-1 { @include animation-delay(.1s) }
 .animate-delay-2 { @include animation-delay(.2s) }
 .animate-delay-3 { @include animation-delay(.4s) }
