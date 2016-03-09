@@ -1,5 +1,6 @@
 #!/bin/bash
 node-sass \
   --output-style compressed \
+  --output src \
   --include-path node_modules/bourbon/app/assets/stylesheets \
-  index.scss designkit-animate.min.css
+  src/index.scss css/designkit-animate.min.css

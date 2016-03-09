@@ -1,6 +1,6 @@
 {
   "name": "designkit-animate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Sass module for css animation transitions.",
   "repository": {
     "type": "git",
@@ -10,6 +10,14 @@
     "name": "Jason Melgoza",
     "email": "jason@rightscale.com"
   },
+  "files": [
+    "src",
+    "css"
+  ],
+  "keywords": [
+    "css",
+    "Sass"
+  ],
   "license": "MIT",
   "homepage": "https://github.com/rightscale-design/designkit-animate#readme",
   "devDependencies": {
