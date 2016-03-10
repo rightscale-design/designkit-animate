@@ -1,11 +1,5 @@
 @charset "UTF-8";
 
-/*
-//
-// Designkit-Animate
-// --------------------------------------------------
-*/
-
 .animate-top,
 .animate-bottom,
 .animate-left,
@@ -148,7 +142,8 @@
 .animate-ease-in { @include animation-timing-function(ease-in) }
 .animate-ease-out { @include animation-timing-function(ease-out) }
 .animate-ease-in-out { @include animation-timing-function(ease-in-out) }
-.animate-motion-1 { @include animation-timing-function(cubic-bezier(.62,.28,.23,.99)) }
-.animate-motion-2 { @include animation-timing-function(cubic-bezier(.075,.82,.165,1)) }
-.animate-motion-3 { @include animation-timing-function(cubic-bezier(.215,.61,.355,1)) }
-.animate-motion-4 { @include animation-timing-function(cubic-bezier(.215,.61,.355,1)) }
+
+.animate-motion-1 { @include animation-timing-function(cubic-bezier(0.62, 0.28, 0.23, 0.99)) }
+.animate-motion-2 { @include animation-timing-function(cubic-bezier(0.075, 0.82, 0.165, 1)) }
+.animate-motion-3 { @include animation-timing-function(cubic-bezier(0.215, 0.61, 0.355, 1)) }
+.animate-motion-4 { @include animation-timing-function(cubic-bezier(0.19, 1, 0.22, 1)) }
