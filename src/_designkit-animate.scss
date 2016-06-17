@@ -85,6 +85,23 @@
   100% { opacity: 1 }
 }
 
+.animate-flash {
+  @include animation-duration(750ms);
+  @include animation-name(animate-flash);
+}
+
+@include keyframes(animate-flash) {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
 @include keyframes(animate-zoom) {
   0% {
     @include transform(scale(.9));
