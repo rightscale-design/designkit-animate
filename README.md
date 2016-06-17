@@ -282,6 +282,51 @@ npm i designkit-animate
   }
 }
 
+.animate-flash {
+  -webkit-animation-duration: 750ms;
+  -moz-animation-duration: 750ms;
+  animation-duration: 750ms;
+  -webkit-animation-name: animate-flash;
+  -moz-animation-name: animate-flash;
+  animation-name: animate-flash;
+}
+
+@-webkit-keyframes animate-flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes animate-flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+@keyframes animate-flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes animate-zoom {
   0% {
     -webkit-transform: scale(0.9);
