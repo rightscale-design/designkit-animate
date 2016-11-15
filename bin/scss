@@ -3,4 +3,4 @@ node-sass \
   --output-style expanded \
   --output css \
   --include-path node_modules/bourbon/app/assets/stylesheets \
-  src/index.scss css/designkit-animate.css
+  src/scss/index.scss src/css/_designkit-animate.css
