@@ -1,6 +1,6 @@
 {
   "name": "designkit-animate",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Sass module for css animation transitions.",
   "repository": {
     "type": "git",
