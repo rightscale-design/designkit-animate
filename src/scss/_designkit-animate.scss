@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+// base
 .animate-top,
 .animate-bottom,
 .animate-left,
@@ -9,26 +10,7 @@
   @include animation-fill-mode(forwards);
 }
 
-.animate-top {
-  @include animation-name(animate-top);
-  @include transform(translateY(-12.5vh));
-}
-
-.animate-bottom {
-  @include animation-name(animate-bottom);
-  @include transform(translateY(12.5vh));
-}
-
-.animate-left {
-  @include animation-name(animate-left);
-  @include transform(translateY(-12.5vh));
-}
-
-.animate-right {
-  @include animation-name(animate-right);
-  @include transform(translateY(12.5vh));
-}
-
+// top
 @include keyframes(animate-top) {
   0% {
     @include transform(translateY(-12.5vh));
@@ -40,6 +22,12 @@
   }
 }
 
+.animate-top {
+  @include animation-name(animate-top);
+  @include transform(translateY(-12.5vh));
+}
+
+// bottom
 @include keyframes(animate-bottom) {
   0% {
     @include transform(translateY(12.5vh));
@@ -51,6 +39,12 @@
   }
 }
 
+.animate-bottom {
+  @include animation-name(animate-bottom);
+  @include transform(translateY(12.5vh));
+}
+
+// left
 @include keyframes(animate-left) {
   0% {
     @include transform(translateX(-12.5vh));
@@ -62,6 +56,12 @@
   }
 }
 
+.animate-left {
+  @include animation-name(animate-left);
+  @include transform(translateY(-12.5vh));
+}
+
+// right
 @include keyframes(animate-right) {
   0% {
     @include transform(translateX(12.5vh));
@@ -73,6 +73,17 @@
   }
 }
 
+.animate-right {
+  @include animation-name(animate-right);
+  @include transform(translateY(12.5vh));
+}
+
+// Fade
+@include keyframes(animate-fade) {
+    0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
 .animate-fade {
   opacity: 0;
   @include animation-name(animate-fade);
@@ -80,16 +91,18 @@
   @include animation-fill-mode(forwards);
 }
 
-@include keyframes(animate-fade) {
-    0% { opacity: 0 }
-  100% { opacity: 1 }
+// fade-out
+@include keyframes(animate-fade-out) {
+  0% { opacity: 1 }
+  100% { opacity: 0 }
 }
 
-.animate-flash {
-  @include animation-duration(750ms);
-  @include animation-name(animate-flash);
+.animate-fade-out {
+  @include animation-name(animate-fade-out);
+  @include animation-duration(.4s);
 }
 
+// flash
 @include keyframes(animate-flash) {
   0%,
   50%,
@@ -102,6 +115,12 @@
   }
 }
 
+.animate-flash {
+  @include animation-duration(750ms);
+  @include animation-name(animate-flash);
+}
+
+// zoom
 @include keyframes(animate-zoom) {
   0% {
     @include transform(scale(.9));
@@ -124,6 +143,27 @@
   @include animation-fill-mode(forwards);
 }
 
+// zoom-out
+@include keyframes(animate-zoom-out) {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-zoom-out {
+  opacity: 1;
+  @include animation-name(animate-zoom-out);
+  @include animation-duration(.2s);
+}
+
+// highlight
 @include keyframes(animate-highlight) {
   0% {
     background-color: rgba(#ddff9e, 0.5);
@@ -141,6 +181,65 @@
   @include animation-fill-mode(forwards);
 }
 
+// flip x
+@keyframes animate-flip-x {
+  0% {
+    opacity: 0;
+    @include transform(perspective(400px) rotate3d(1, 0, 0, 90deg));
+    @include animation-timing-function(ease-in);
+  }
+
+  40% {
+    @include transform(perspective(400px) rotate3d(1, 0, 0, -20deg));
+    @include animation-timing-function(ease-in);
+  }
+
+  60% {
+    opacity: 1;
+    @include transform(perspective(400px) rotate3d(1, 0, 0, 10deg));
+  }
+
+  80% {
+    @include transform(perspective(400px) rotate3d(1, 0, 0, -5deg));
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+.animate-flip-x {
+  @include backface-visibility(visible);
+  @include animation-name(animate-flip-x);
+  @include animation-fill-mode(both);
+}
+
+// flip x out
+
+@keyframes animate-flip-x-out {
+  from {
+    @include transform(perspective(400px));
+  }
+
+  30% {
+    opacity: 1;
+    @include transform(perspective(400px) rotate3d(1, 0, 0, -20deg));
+  }
+
+  to {
+    opacity: 0;
+    @include transform(perspective(400px) rotate3d(1, 0, 0, 90deg));
+  }
+}
+
+.animate-flip-x-out {
+  @include animation-fill-mode(both);
+  @include animation-duration(.75s);
+  @include animation-name(animate-flip-x-out);
+  @include backface-visibility(visible);
+}
+
+// delay
 .animate-delay-1 { @include animation-delay(.1s) }
 .animate-delay-2 { @include animation-delay(.2s) }
 .animate-delay-3 { @include animation-delay(.4s) }
@@ -148,6 +247,7 @@
 .animate-delay-5 { @include animation-delay(1s) }
 .animate-delay-6 { @include animation-delay(2s) }
 
+// duration
 .animate-duration-1 { @include animation-duration(.1s) }
 .animate-duration-2 { @include animation-duration(.2s) }
 .animate-duration-3 { @include animation-duration(.4s) }
@@ -155,11 +255,13 @@
 .animate-duration-5 { @include animation-duration(1s) }
 .animate-duration-6 { @include animation-duration(2s) }
 
+// timing
 .animate-linear { @include animation-timing-function(linear) }
 .animate-ease-in { @include animation-timing-function(ease-in) }
 .animate-ease-out { @include animation-timing-function(ease-out) }
 .animate-ease-in-out { @include animation-timing-function(ease-in-out) }
 
+// beziers
 .animate-motion-1 { @include animation-timing-function(cubic-bezier(0.62, 0.28, 0.23, 0.99)) }
 .animate-motion-2 { @include animation-timing-function(cubic-bezier(0.075, 0.82, 0.165, 1)) }
 .animate-motion-3 { @include animation-timing-function(cubic-bezier(0.215, 0.61, 0.355, 1)) }
