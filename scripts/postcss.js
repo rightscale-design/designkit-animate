@@ -11,7 +11,7 @@ fs.readFile('./dist/temp/_temp.css', (err, css) => {
       to: './dist/app.css'
     })
     .then(result => {
-      fs.writeFileSync('./dist/designkit-animation.css', result.css);
+      fs.writeFileSync('./dist/designkit-animate.css', result.css);
       console.log('Success!');
     });
 });

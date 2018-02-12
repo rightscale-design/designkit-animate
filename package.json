@@ -1,11 +1,11 @@
 {
-  "name": "designkit-animation",
+  "name": "designkit-animate",
   "version": "1.0.0",
   "description": "A Sass module for * used in RightScale apps.",
-  "homepage": "https://github.com/rightscale-design/designkit-animation#readme",
+  "homepage": "https://github.com/rightscale-design/designkit-animate#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rightscale-design/designkit-animation.git"
+    "url": "git+https://github.com/rightscale-design/designkit-animate.git"
   },
   "author": {
     "name": "Jason Melgoza"
@@ -17,20 +17,20 @@
     "styles"
   ],
   "bugs": {
-    "url": "https://github.com/rightscale-design/designkit-animation/issues"
+    "url": "https://github.com/rightscale-design/designkit-animate/issues"
   },
   "files": [
     "package.json",
     "LICENSE",
     "README.md",
     "CHANGELOG.md",
-    "dist/designkit-animation.css",
-    "dist/designkit-animation.min.css",
-    "src/_designkit-animation.scss",
+    "dist/designkit-animate.css",
+    "dist/designkit-animate.min.css",
+    "src/_designkit-animate.scss",
     "src/index.scss"
   ],
-  "scss": "src/_designkit-animation.scss",
-  "main": "dist/designkit-animation.min.css",
+  "scss": "src/_designkit-animate.scss",
+  "main": "dist/designkit-animate.min.css",
   "browserslist": [
     "> 1%",
     "last 2 versions"
