@@ -16,36 +16,36 @@ npm i --save designkit-animate
 .animate-left,
 .animate-right {
   opacity: 0;
-  -webkit-animate-duration: 0.6s;
-          animate-duration: 0.6s;
-  -webkit-animate-fill-mode: forwards;
-          animate-fill-mode: forwards;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .animate-top {
-  -webkit-animate-name: animate-top;
-          animate-name: animate-top;
+  -webkit-animation-name: animate-top;
+          animation-name: animate-top;
   -webkit-transform: translateY(-12.5vh);
           transform: translateY(-12.5vh);
 }
 
 .animate-bottom {
-  -webkit-animate-name: animate-bottom;
-          animate-name: animate-bottom;
+  -webkit-animation-name: animate-bottom;
+          animation-name: animate-bottom;
   -webkit-transform: translateY(12.5vh);
           transform: translateY(12.5vh);
 }
 
 .animate-left {
-  -webkit-animate-name: animate-left;
-          animate-name: animate-left;
+  -webkit-animation-name: animate-left;
+          animation-name: animate-left;
   -webkit-transform: translateY(-12.5vh);
           transform: translateY(-12.5vh);
 }
 
 .animate-right {
-  -webkit-animate-name: animate-right;
-          animate-name: animate-right;
+  -webkit-animation-name: animate-right;
+          animation-name: animate-right;
   -webkit-transform: translateY(12.5vh);
           transform: translateY(12.5vh);
 }
@@ -156,12 +156,12 @@ npm i --save designkit-animate
 
 .animate-fade {
   opacity: 0;
-  -webkit-animate-name: animate-fade;
-          animate-name: animate-fade;
-  -webkit-animate-duration: 0.4s;
-          animate-duration: 0.4s;
-  -webkit-animate-fill-mode: forwards;
-          animate-fill-mode: forwards;
+  -webkit-animation-name: animate-fade;
+          animation-name: animate-fade;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animate-fade {
@@ -183,10 +183,10 @@ npm i --save designkit-animate
 }
 
 .animate-flash {
-  -webkit-animate-duration: 750ms;
-          animate-duration: 750ms;
-  -webkit-animate-name: animate-flash;
-          animate-name: animate-flash;
+  -webkit-animation-duration: 750ms;
+          animation-duration: 750ms;
+  -webkit-animation-name: animate-flash;
+          animation-name: animate-flash;
 }
 
 @-webkit-keyframes animate-flash {
@@ -251,12 +251,12 @@ npm i --save designkit-animate
 
 .animate-zoom {
   opacity: 0;
-  -webkit-animate-name: animate-zoom;
-          animate-name: animate-zoom;
-  -webkit-animate-duration: 0.2s;
-          animate-duration: 0.2s;
-  -webkit-animate-fill-mode: forwards;
-          animate-fill-mode: forwards;
+  -webkit-animation-name: animate-zoom;
+          animation-name: animate-zoom;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animate-highlight {
@@ -282,112 +282,112 @@ npm i --save designkit-animate
 }
 
 .animate-highlight {
-  -webkit-animate-name: animate-highlight;
-          animate-name: animate-highlight;
-  -webkit-animate-duration: 2s;
-          animate-duration: 2s;
-  -webkit-animate-fill-mode: forwards;
-          animate-fill-mode: forwards;
+  -webkit-animation-name: animate-highlight;
+          animation-name: animate-highlight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .animate-delay-1 {
-  -webkit-animate-delay: 0.1s;
-          animate-delay: 0.1s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
 }
 
 .animate-delay-2 {
-  -webkit-animate-delay: 0.2s;
-          animate-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
 .animate-delay-3 {
-  -webkit-animate-delay: 0.4s;
-          animate-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
 }
 
 .animate-delay-4 {
-  -webkit-animate-delay: 0.6s;
-          animate-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
 }
 
 .animate-delay-5 {
-  -webkit-animate-delay: 1s;
-          animate-delay: 1s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 .animate-delay-6 {
-  -webkit-animate-delay: 2s;
-          animate-delay: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .animate-duration-1 {
-  -webkit-animate-duration: 0.1s;
-          animate-duration: 0.1s;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
 }
 
 .animate-duration-2 {
-  -webkit-animate-duration: 0.2s;
-          animate-duration: 0.2s;
+  -webkit-animation-duration: 0.2s;
+          animation-duration: 0.2s;
 }
 
 .animate-duration-3 {
-  -webkit-animate-duration: 0.4s;
-          animate-duration: 0.4s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
 }
 
 .animate-duration-4 {
-  -webkit-animate-duration: 0.6s;
-          animate-duration: 0.6s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
 }
 
 .animate-duration-5 {
-  -webkit-animate-duration: 1s;
-          animate-duration: 1s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .animate-duration-6 {
-  -webkit-animate-duration: 2s;
-          animate-duration: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .animate-linear {
-  -webkit-animate-timing-function: linear;
-          animate-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 
 .animate-ease-in {
-  -webkit-animate-timing-function: ease-in;
-          animate-timing-function: ease-in;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 .animate-ease-out {
-  -webkit-animate-timing-function: ease-out;
-          animate-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 .animate-ease-in-out {
-  -webkit-animate-timing-function: ease-in-out;
-          animate-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 .animate-motion-1 {
-  -webkit-animate-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
-          animate-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
+  -webkit-animation-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
+          animation-timing-function: cubic-bezier(0.62, 0.28, 0.23, 0.99);
 }
 
 .animate-motion-2 {
-  -webkit-animate-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-          animate-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .animate-motion-3 {
-  -webkit-animate-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-          animate-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+          animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .animate-motion-4 {
-  -webkit-animate-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-          animate-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+          animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 ```
