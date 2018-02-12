@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Designkit-Animate</title>
-  <link rel="stylesheet" href="dist/designkit-animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+  <title>Designkit-Animation Sample</title>
+  <link rel="stylesheet" href="https://unpkg.com/designkit-global@1.1.0/dist/designkit-global.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/designkit-animation@1.0.0/dist/designkit-animation.min.css">
+  <!-- <link rel="stylesheet" href="doc.min.css"> -->
   <style>
     * {
       -moz-box-sizing: border-box;
            box-sizing: border-box;
     }
-
     body {
       padding-top: 84px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -20,26 +20,21 @@
       line-height: 1.5;
       color: #1e2327;
       letter-spacing: 0;
-
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
-
     .wrapper {
       width: 928px;
       padding: 0 40px;
       margin: 0 auto;
     }
-
     .text-center {
       text-align: center;
     }
-
     .mega {
       font-size: 2.4rem;
     }
-
     header {
       position: fixed;
       top: 0;
@@ -51,19 +46,16 @@
       margin-bottom: 20px;
       background: #1e2327;
     }
-
     header h1 {
       padding: 0;
       margin: 0;
       font-size: 16px;
       font-weight: 500;
     }
-
     header a {
       color: #fff;
       text-decoration: none;
     }
-
     header .version {
       display: inline-block;
       padding: 2px 5px;
@@ -79,14 +71,8 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="wrapper">
-      <h1><a href="https://github.com/rightscale-design/designkit-animate">DesignKit - Animate</a> <span class="version">v0.0.6</span></h1>
-    </div>
-  </header>
   <div class="wrapper">
     <div class="text-center mega">
-      <div class="animate-flip-x animate-duration-5 animate-delay-5" style="background-color: #1e2327; color: #fff;">Flip-X</div>
       <div class="animate-top animate-delay-1">Top</div>
       <div class="animate-right animate-delay-2">Right</div>
       <div class="animate-bottom animate-delay-3">Bottom</div>
@@ -105,7 +91,6 @@
       <div class="animate-left animate-motion-2">Motion 2</div>
       <div class="animate-left animate-motion-3">Motion 3</div>
       <div class="animate-left animate-motion-4">Motion 4</div>
-
     </div>
   </div>
 </body>

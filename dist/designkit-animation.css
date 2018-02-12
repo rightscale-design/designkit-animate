@@ -1,16 +1,3 @@
-# designkit-animation
-1.0.0
-
-A Sass module for * used in RightScale apps.
-
-## Install
-```
-npm i --save designkit-animation
-```
-
-## CSS
-
-```css
 .animate-top,
 .animate-bottom,
 .animate-left,
@@ -389,13 +376,3 @@ npm i --save designkit-animation
   -webkit-animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
           animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-
-```
-
-## Author
-
-Jason Melgoza
-
-## License
-
-MIT
